@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicole Joseph's Portfolio</title>
+    <!-- do I need ""./style.css" ? -->
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/e83922ad40.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-------------------------------------------- About Me Section --------------------------------------------------->
+    <div id = "about">
+        <div class="video-container">
+            <video autoplay muted loop>
+              <source src="water-ripple1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <!-- "li" is for your ordered list of tabs in the navigation bar -->
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#portfolio">Machine Learning</a></li>
+                        <li><a href = "#portfolio2">Natural Language Processing</a></li>
+                        <li><a href = "#creative">Creative Coding</a></li>
+                        <li><a href = "#games">Game Design</a></li>
+                        <li><a href = "#services">Other</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class = "container">
+            <div class = "row">
+                <div class = "about-col-1"> 
+                    <img src = "me1.png">
+                </div>
+                <div class = "about-col-2"> 
+                    <h1 class = "sub-title"> Hi, I'm Nicole... </h1>
+                    <p>I'm a recent graduate from The Cooper Union with a B.S. in Engineering and a Computer Science minor. 
+                        My academic journey ignited a passion for software development, machine learning, and data science. 
+                        As a Breakthrough Tech AI fellow, I interned at Memorial Sloan Kettering Cancer Center, achieved a top 
+                        position in a Google Kaggle competition, and applied ML to real-world challenges under industry mentorship. 
+                        Arising from my 6 month role as a STEM teaching assistant, I thrive in cross-functional teams and value clear
+                        communication. Overall, I'm thrilled by projects that demand collaborative and data-driven solutions!
+                    </p>
+                    <div class = "tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('experience', event)">Experience</p>
+                        <p class = "tab-links" onclick="opentab('contact', event)">Contact</p>
+                    </div>
+                    <div class = "tab-contents active-tab" id = "experience">
+                            <li><span>Affiliations:</span><br>The Cooper Union<br> 
+                                Cornell Tech<br> Break Through Tech AI Program</li>
+                            <li><span>Skillset:</span><br>- Software Development<br>- Python, C++, Java Script, Java, HTML<br> 
+                                - Data Science and Analytics (NumPy, MatPlotLib, Pandas, Scikit Learn) <br> - Neural Network Design: TensorFlow, PyTorch <br> - Image Processing: OpenCV, Pillow </li>
+                            <li><span>Current Location: </span><br>New York</li> 
+                    </div>
+                    <div class = "tab-contents" id = "contact">
+                        <!-- <ul>  FOR SOME REASON THIS UL TAG TOTALLY MESSED UP THE FORMATTING -->
+                            <li><span>Email:</span><br>nicolemariajj@gmail.com</li>
+                            <li><span>Phone:</span><br>347 204 4346 </li>
+                            <li><span>Other:</span><br>
+                            <div class = "social-icons">
+                                <a href="https://www.linkedin.com/in/nicole-joseph-0b020018a/"><i class = "fa-brands fa-linkedin"></i></a>    
+                                <a href="https://github.com/nicolejoseph"><i class="fa-brands fa-github"></i></a>  
+                            </div></li> 
+                        <!-- </ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-------------------------------------------- MACHINE LEARNING SECTION ---------------------------------------------------> 
+ <div id = "portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">MACHINE LEARNING</h1>
+        <div class = "work-list">
+            <div class = "work">
+                <img src = "myImages/work1.png">
+                <div class="layer">
+                    <h3>Memorial Sloan Kettering Cancer Center: <br> Image Processing System</h3>
+                    <p> Collaborated with 4 students and a company advisor from 
+                        MSKCC to develop 
+                        a deep learning solution for automated object detection in 
+                        cancer images. My team preprocessed and augmented the image data using computer vision libraries such as NumPy, OpenCV, and Pillow. 
+                        My role involved coding, fine-tuning, and optimizing 
+                        the Python model to improve accuracy. The final image processing system was presented to industry professionals from MSKCC. </p>
+                    <h2>Tags: Computer Vision, Image Processing, Deep Learning, TensorFlow</h2>
+                    <a href = "https://github.com/nicolejoseph/MSKCC-AI-Studio-Project"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "myImages/work2.png">
+                <div class="layer">
+                    <h3>Adversarial Autoencoders; <br> Research Project</h3>
+                    <p> Worked with a partner to reproduce results from the paper “Adversarial Autoencoders” by Makhzani et al, which 
+                        introduced a generative model for image synthesis. To implement the architecture, 
+                        we created an adversarial autoencoder model using three basic model blocks: an encoder, decoder, and discriminator.
+                        The model was trained, tuned, and tested on the MNIST dataset, which consists of 60,000 images. Finally,
+                        we wrote a conference-style technical paper describing our research and experiments.
+                    </p>
+                    <h2>Tags: Generative AI, Image Synthesis, Guassian Distribution, Deep Learning</h2>
+                    <a href = "https://github.com/nicolejoseph/Adversarial-Autoencoder"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "myImages/work3.png">
+                <div class="layer">
+                    <h3>"Blob Bodies"</h3>
+                    <p> In the entertainment industry, marker-based 3D tracking is a widely used method for
+                        motion capture in video games and animated films. While highly accurate, it requires 
+                        expensive proprietary equipment, is time consuming to set up, and is overall less accessible 
+                        to everyday artists. As an alternative, pose estimation has gained popularity as a low-cost and 
+                        open source method for body tracking. Therefore, this project investigated the application of Style Transfer 
+                        to generate body tracking art in conjunction with Google's Blazepose and pose estimation algorithms.
+                         </p>
+                    <h2>Tags: Image Segmentation, Pose Estimation Algorithms, Style Transfer</h2>
+                    <a href = "https://drive.google.com/file/d/1ZrgeEEv8yku9qrl9KZrNX43trK3w6BYw/view"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href = "https://github.com/nicolejoseph/Deep-Learning" class = "btn"> See More Deep Learning Projects</a>
+    </div>
+</div>
+ <!-------------------------------------------- NLP SECTION ---------------------------------------------------> 
+ <div id = "portfolio2">
+    <div class = "container">
+        <h1 class = "sub-title">NATURAL LANGUAGE PROCESSING</h1>
+        <div class = "work-list">
+            <div class = "work">
+                <img src = "NLP/tweets3.png">
+                <div class="layer">
+                    <h3>Text Classification and Sentiment Analysis</h3>
+                    <p> The objective of this program was to implement and train a neural net using Python, 
+                        TensorFlow, and Keras to complete the NLP task of text classification of the Disaster 
+                        Tweets dataset as disaster (1) or no disaster (0). First, I cleaned and preprocessed 7,613 
+                        tweets using the NLTK toolkit. After tokenization, I coded a model with LSTM (Long Short-Term Memory) 
+                        layers, a variety of recurrent neural networks (RNNs).</p>
+                    <h2>Tags: NLP, Text Preprocessing, Vectorization, RNNs </h2>
+                    <a href = "https://github.com/nicolejoseph/Natural-Language-Processing/tree/master/TextClassificationRNN"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "NLP/array-crop2.png">
+                <div class="layer">
+                    <h3>Web-Scraping; <br> Data Science for Social Good</h3>
+                    <p> In this course, my team developed a suite of web-scraping tools for the non-profit organization The Bail Project. 
+                        Data was scraped daily from 12 jail websites including inmates’ age, race, charge, and bond amounts. This data was 
+                        cleaned, corrected, and merged. The final compiled data frame had almost 4,000 rows of crimes, and gave a bigger picture 
+                        of how skewed the bail system is towards people of color. </p>
+                    <h2>Tags: Data Mining, Structured and Unstructured Data, Social Impact Tech</h2>
+                    <a href = "https://ee.cooper.edu/~keene/jekyll/update/2022-05-12/DSSG.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "NLP/movie3.png">
+                <div class="layer">
+                    <h3>Kaggle Competition <br>Movie Prediction System</h3>
+                    <p>Collaborated in a 5-person team to create a movie score prediction system that ranked in the top 5 of all
+                         team submissions. The objective was to implement an ML model which outputs the expected movie rating given user history. We started
+                          by preprocessing the 45,000 lines of data, and performed feature engineering using Pandas. Overall, we achieved a
+                           RMSE score of 0.177 using Singular Value Decomposition (SVD), a matrix factorization technique, and Optuna, an 
+                           automatic hyperparameter optimization framework.</p>
+                    <h2>Tags: Feature Engineering, Matrix Factorization, Hyperparameter Optimization</h2>
+                    <a href = "https://github.com/nicolejoseph/Natural-Language-Processing/tree/master/BTTAIxGoogleKaggleCompetition"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href = "https://github.com/nicolejoseph/Natural-Language-Processing" class = "btn"> See More NLP Projects</a>
+    </div>
+</div>
+     <!-------------------------------------------- CREATIVE CODING SECTION --------------------------------------------------->
+     <div id="creative">
+        <div class="container">
+            <h1 class="sub-title">Creative Coding</h1>
+            <div class="project-boxes">
+                <div class="project-box">
+                    <a href="https://github.com/nicolejoseph/MenschelFellowship-Bodytracking">
+                        <h3>Reflections on Dance, Mobility, and BodyTracking </h3>
+                        <div class="grid-container"> 
+                            <img src="myImages/digital-movement1.jpg" alt="Project 1 Image">
+                            <img src="myImages/digital-movement2.jpg" alt="Project 2 Image">
+                            <img src="myImages/digital-movement3.jpg" alt="Project 3 Image">
+                            <img src="myImages/digital-movement4.jpg" alt="Project 4 Image">
+                        </div>
+                        <p>As a Benjamin Menschel Fellow, my partner and I were awarded funding to conduct research on the intersection of dance, 
+                            mobility, and technology. We designed and coded an interactive installation in Java that tracks the body of a dancer 
+                            and generates animations for the stage. By combining the Kinect camera with Processing, a visual graphics library, 
+                            we achieved a beautiful end result. The fellowship culminated in an immersive exhibition in February 2023 and our 
+                            research was published in the fellowship catalog. </p>
+                    </a>
+                </div>
+
+                <div class="project-box project-box-2">
+                    <a href="https://www.youtube.com/watch?v=qzNoci3tqSs&t=15s">
+                        <h3>Noise Creates Noise</h3>
+                        <div class="grid-container">
+                            <img src="myImages/axidraw-grid.png" alt="Project 2 Image">
+                        </div>
+                        <p>In the Generative Algorithms for Art & Architecture Course, my team was challenged to create a generative work that results in a 
+                            physical medium. We decided to use a simple robot - an AxiDraw Pen Plotter, paper, ink, some code, and noise. These drawings were 
+                            generated by a Python script that controlled the pen plotter’s movement. As the computer picked up noise from the environment, mathematical 
+                            noise was added to the SVG drawing. We experimented with playing classical and rock music, and even singing!
+                            </p>
+                    </a>
+                </div>
+
+                <div class="project-box project-box-3">
+                    <a href="https://github.com/nicolejoseph/GenerativeAlgorithms-ArtArch">
+                        <h3>Emotion Reactive Photobooth</h3>
+                        <div class="grid-container">
+                            <img src="myImages/crop-photobooth.jpg" alt="Project 3 Image">
+                        </div>
+                        <p>For this project, my team created an AI photobooth that reacts to the user inside based on their facial expressions. 
+                            By using Facial Emotion Recognition (FER) algorithms, our script analyzed and interpreted human facial expressions to
+                            determine the emotional state of an individual and change the patterns and colors inside the photo booth. This 
+                            project was featured at the Cooper Union Summit on Generative Art, Architecture, and Engineering.
+                            </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------- Games Section --------------------------------------------------->
+    <div id="games"> 
+        <div class="container">
+            <h1 class="sub-title">Game Design</h1>
+            <div class="project-boxes">
+                <div class="project-box">
+                    <a href="https://github.com/nicolejoseph/CS-Projects/tree/main/AI-CheckersGame">
+                        <h3>AI Checkers Game </h3>
+                        <div class="grid-container"> 
+                            <img src="games/AIcheckers.png" alt="Project 1 Image">
+                        </div>
+                        <p>Game-playing program that uses artificial intelligence to play Checkers against a human user. 
+                            This program combines iterative deepening and a minimax search with alpha-beta pruning, 
+                            along with a heuristic function,to search the game space and decide each of its moves. 
+                            Implemented with object-oriented C++ on a simple ASCII interface. </p>
+                    </a>
+                </div>
+
+                <div class="project-box project-box-4">
+                    <a href="https://ee.cooper.edu/~keene/jekyll/update/2022-05-12/DSSG.html">
+                        <h3>Bail Fund Interactive Wall</h3>
+                        <div class="grid-container">
+                            <img src="myImages/BailFund1.jpg" alt="Project 4 Image">
+                            <img src="myImages/BailFund2.jpg" alt="Project 4 Image">
+                        </div>
+                        <p>This interactive wall was based on the data scraped daily from 12 jail websites including inmates’ age, race, 
+                            charge, and bond amounts. This interactive installation served to reveal the dual inequity of class and race in 
+                            the American bail system and humanize those who are currently navigating this specific vein of the carceral state. 
+                            </p>
+                    </a>
+                </div>
+
+                <div class="project-box project-box-5">
+                    <a href="https://sites.google.com/view/frenchhh123/home">
+                        <h3>Augmented Reality App Prototypes</h3>
+                        <div class="grid-container">
+                            <img src="games/AR.png" alt="Project 2 Image">
+                        </div>
+                        <p>As an AR/VR teaching assistant, my main role was to rapid prototype interactive apps in HTML and JavaScript. 
+                            I mentored students in app development and user focused product design. Overall, I effectively managed 5 teams, 
+                            providing guidance and troubleshooting for real-time VR and AR code. I completed a rigorous 25-hour training program to master 
+                            the skills required for this TA position.
+                            </p>
+                    </a>
+                </div>
+
+                <div class="project-box project-box-3">
+                    <a href="https://drive.google.com/file/d/13aQeJ-Ts_RJVup_XbvDU2Az68eN5pw-j/view?usp=sharing">
+                        <h3>"Burger Bot" <br> Cooper Union Robot Battle</h3>
+                        <div class="grid-container">
+                            <img src="games/burgerbot.png" alt="Project 3 Image">
+                        </div>
+                        <p>I collaborated with 2 friends to fabricate an autonomous mobile robot for the annual Cooper Union Robot Battle. 
+                            As the software lead, I developed a Python script that ran on a raspberry pi to parse real-time sensor data and define 
+                            robot movement. This script also controlled speed and oriented the robot as it avoided obstacles. We summarized the robot’s
+                             mechanical design, electrical systems, and assembly in a 100-page technical report, which can be accessed below!
+
+                            </p>
+                    </a>
+                </div>
+
+                <div class="project-box project-box-2">
+                    <a href="https://www.lostcityofmer.org/">
+                        <h3>Video Game Design Internship <br> Lost City of Mer</h3>
+                        <div class="grid-container">
+                            <img src="games/unreal.png" alt="Project 2 Image">
+                        </div>
+                        <p>For this role, I supported the game design of Lost City of Mer, an award-winning cross-platform video game about climate change.
+                             I collaborated with a team of software engineers, 3D animators, and writers to create game prototypes in Unreal Engine 4. My 
+                             responsibilities included testing assets and character designs; I also conducted user interface research and presented findings 
+                             at weekly meetings.”
+                            </p>
+                    </a>
+                </div>
+
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-------------------------------------------- Other Section --------------------------------------------------->
+<div id = "services">
+    <div class = "container">
+        <h1 class = "sub-title"> OTHER </h1>
+        <div class = "services-list"> 
+            <div> 
+                <h2>Data Structures and Algorithms</h2>
+                <p>Includes projects like Graph Search, in which I used Dijkstra’s algorithm to solve the single-source shortest-path problem in a 
+                    specified graph. To do this, I created a hash table and priority queue (using a binary heap) from scratch. This project was
+                     implemented using object-oriented C++ </p>
+                <a href = "https://github.com/nicolejoseph/CS-Projects/tree/main/DataStructures%26Algorithms"> Learn More</a>
+            </div>
+            <div> 
+                <h2>Operating Systems</h2>
+                <p>Projects completed for the Operating Systems course at The Cooper Union (Fall 2021). Includes memory mapping and signal handler programs.
+                    Written in C. </p>
+                <a href = "https://github.com/nicolejoseph/CS-Projects/tree/main/OS"> Learn More</a>
+            </div>
+            <div> 
+                <h2>MATLAB Seminar: Signals & Systems</h2>
+                <p>
+                    This seminar was a weekly hands-on, interactive seminar that introduced students to MATLAB, in general, 
+                    and the Signal Processing Toolbox in particular. 
+                    I explored scientific computation and scientific visualizations with MATLAB.</p>
+                <a href = "https://github.com/nicolejoseph/CS-Projects/tree/main/matlab"> Learn More</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+
+</html>
