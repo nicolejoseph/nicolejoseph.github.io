@@ -185,7 +185,7 @@ ul li a:hover::after{
 }
 
 /* <!-------------------------------------------- MACHINE LEARNING SECTION ---------------------------------------------------> */
-#portfolio {
+#ML {
   padding: 30px 80px;
   background-color: black;
   height: 125vh; 
@@ -272,7 +272,7 @@ ul li a:hover::after{
   background: #ea0056;
 }
 /* <!-------------------------------------------- NLP SECTION --------------------------------------------------->  */
-#portfolio2 {
+#NLP {
   padding: 30px 80px;
   background-color: black;
   height: 125vh; 
@@ -400,7 +400,7 @@ ul li a:hover::after{
   text-align: center;
   transition: transform 0.3s;
   width: 750px; /* Adjust the width of the project box */
-  height: 650px; /* Adjust the height of the project box */
+  height: auto; /* Adjust the height of the project box */
 
 }
 .project-box:hover {
@@ -438,7 +438,7 @@ ul li a:hover::after{
 /* PROJECT BOX 2 */
 .project-box.project-box-2 {
   width: 750px; /* Adjust the width as needed */
-  height: 650px; /* Adjust the height as needed */
+  height: auto; /* Adjust the height as needed */
 }
 .project-box.project-box-2 .grid-container {
   display: flex;
@@ -454,7 +454,7 @@ ul li a:hover::after{
 /* PROJECT BOX 3 */
 .project-box.project-box-3 {
   width: 750px; /* Adjust the width as needed */
-  height: 650px; /* Adjust the height as needed */
+  height: auto; /* Adjust the height as needed */
 }
 .project-box.project-box-3 .grid-container {
   display: flex;
@@ -605,12 +605,8 @@ ul li a:hover::after{
 
 
 
-
-
-
-
   /* <!-------------------------------------------- OTHER ---------------------------------------------------> */
-#services {
+#other {
   padding: 30px 80px;
   background-image: url('myImages/bg1.png'); 
   background-size: 125% auto; 
